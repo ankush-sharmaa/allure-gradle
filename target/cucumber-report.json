@@ -1,0 +1,365 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-11T20:07:17.744Z",
+        "line": 8,
+        "name": "User Found",
+        "description": "",
+        "id": "user-login;user-found",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 653000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User has the Id 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 16
+                }
+              ],
+              "location": "io.reqres.apis.stepdefs.UserSteps.user_provides_the_id(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2445000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User information should be available with below details",
+            "match": {
+              "location": "io.reqres.apis.stepdefs.UserSteps.user_information_should_be_available_with_below_details(java.util.List\u003cjava.util.Map\u003cjava.lang.String, java.lang.String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "email",
+                  "first_name",
+                  "last_name",
+                  "avatar"
+                ]
+              },
+              {
+                "cells": [
+                  "2",
+                  "janet.weaver@reqres.in",
+                  "Janet",
+                  "Weaver",
+                  "https://reqres.in/img/faces/2-image.jpg"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          },
+          {
+            "name": "@API"
+          },
+          {
+            "name": "@Priority.High"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-11T20:07:20.957Z",
+        "line": 19,
+        "name": "User Not Found",
+        "description": "",
+        "id": "user-login;user-not-found",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User has the Id 12345666",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345666",
+                  "offset": 16
+                }
+              ],
+              "location": "io.reqres.apis.stepdefs.UserSteps.user_provides_the_id(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 374000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User information should not be available",
+            "match": {
+              "location": "io.reqres.apis.stepdefs.UserSteps.user_information_should_not_be_available()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          },
+          {
+            "name": "@API"
+          },
+          {
+            "name": "@Priority.low"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-11T20:07:21.336Z",
+        "line": 28,
+        "name": "User Delete Successfull",
+        "description": "",
+        "id": "user-login;user-delete-successfull",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 700000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User having Id 2 should be deleted successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 15
+                }
+              ],
+              "location": "io.reqres.apis.stepdefs.UserSteps.userHavingIdShouldBeDeletedSuccessfully(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          },
+          {
+            "name": "@API"
+          },
+          {
+            "name": "@Priority.Normal"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-11T20:07:22.042Z",
+        "line": 36,
+        "name": "User Delete Unsuccessfull",
+        "description": "",
+        "id": "user-login;user-delete-unsuccessfull",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 690000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User having no Id should not be deleted",
+            "match": {
+              "location": "io.reqres.apis.stepdefs.UserSteps.userHavingIdShouldNotBeDeleted()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          },
+          {
+            "name": "@API"
+          },
+          {
+            "name": "@Priority.Normal"
+          }
+        ]
+      }
+    ],
+    "name": "User Login",
+    "description": "",
+    "id": "user-login",
+    "keyword": "Feature",
+    "uri": "classpath:features/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-11T20:07:22.739Z",
+        "line": 8,
+        "name": "User Registration Successfull",
+        "description": "",
+        "id": "user-registration;user-registration-successfull",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User provides following information for registration",
+            "match": {
+              "location": "io.reqres.apis.stepdefs.UserSteps.user_provides_following_information_for_registration(java.util.List\u003cjava.util.Map\u003cjava.lang.String, java.lang.String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "eve.holt@reqres.in",
+                  "pistol"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 763000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should be created successfully",
+            "match": {
+              "location": "io.reqres.apis.stepdefs.UserSteps.user_should_be_created_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@API"
+          },
+          {
+            "name": "@Priority.High"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-11T20:07:23.513Z",
+        "line": 19,
+        "name": "User Registration Unsuccessfull",
+        "description": "",
+        "id": "user-registration;user-registration-unsuccessfull",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User provides following information for registration",
+            "match": {
+              "location": "io.reqres.apis.stepdefs.UserSteps.user_provides_following_information_for_registration(java.util.List\u003cjava.util.Map\u003cjava.lang.String, java.lang.String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "eve.holt@reqres.in",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 703000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User should be not created with message \u0027Missing password\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Missing password\u0027",
+                  "offset": 40
+                }
+              ],
+              "location": "io.reqres.apis.stepdefs.UserSteps.user_should_be_not_created(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@API"
+          },
+          {
+            "name": "@Priority.High"
+          }
+        ]
+      }
+    ],
+    "name": "User Registration",
+    "description": "",
+    "id": "user-registration",
+    "keyword": "Feature",
+    "uri": "classpath:features/Registration.feature",
+    "tags": []
+  }
+]
