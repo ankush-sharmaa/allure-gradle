@@ -1,8 +1,8 @@
 # From https://github.com/github/gitignore/blob/master/Gradle.gitignore
 .gradle
 /build/
-.allure
-.idea
+/.allure
+/.idea
 
 # Ignore Gradle GUI config
 gradle-app.setting
